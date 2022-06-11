@@ -2,6 +2,9 @@
 @import 'home';
 @import 'menu';
 @import 'about';
+@import 'projects';
+@import 'contact';
+@import 'responsive';
 body {
     background: $primary-color;
     color: set-text-color($primary-color);
@@ -40,8 +43,8 @@ main {
         bottom: 1rem;
         left: 1rem;
         a {
-            @include transiton-ease;
             padding: 0.4rem;
+            @include transition-ease;
             &:hover {
                 color: $secondary-color;
             }
